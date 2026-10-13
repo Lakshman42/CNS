@@ -1,0 +1,3 @@
+Implications of Randomized DSA vs. Deterministic RSA Signatures:
+1. Non-Determinism in DSA: Because DSA generates a fresh random per-message secret k (0 < k < q) for every signature, signing the exact same message twice yields completely different (r, s) pairs, preventing traffic analysis of repeated signed messages.
+2. Catastrophic Risk of Nonce Reuse in DSA: If the random number generator fails and produces the same k for two different messages M1 and M2, both signatures have the same r, and anyone can compute k = (H(M1) − H(M2)) · (s1 − s2)^-1 mod q and then extract the signer's private key x = (s1·k − H(M1)) · r^-1 mod q (famously used to extract the PlayStation 3 master signing key).

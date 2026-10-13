@@ -1,0 +1,2 @@
+Motivation for Padding Complete Blocks (Program 34):
+Suppose an 8-byte message legitimately ends with the byte `0x80` (`10000000` in binary). If the sender did not append an extra padding block, the receiver would mistake the legitimate trailing `0x80` byte for padding and strip it away, corrupting the data. Always appending a `10*` padding block makes unpadding 100% deterministic and lossless for all binary inputs.
