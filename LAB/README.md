@@ -1,4 +1,4 @@
-# CSA51 — Cryptography and Network Security Laboratory (List of 40 Programs)
+# CSA5107 — Cryptography and Network Security Laboratory (List of 40 Programs)
 
 This directory contains the C/C++ implementations, theoretical explanations (`README.md`), and execution output screenshots (`Exp_<N>_Output.png`) for all **40 programs** specified in the University Practical Examination List of Programs.
 
